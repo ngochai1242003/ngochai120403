@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   margin: auto;
+  padding: 0 135px;
 }
 .container__title {
   font-family: Seaweed Script, cursive;
@@ -115,6 +116,7 @@
 }
 .container .menu__items .crd .img {
   text-align: center;
+  height: 198px;
 }
 .container .menu__items .crd .main .star__icon {
   width: 102px;

@@ -1,7 +1,7 @@
 @mixin container {
   max-width: 1440px;
   margin: auto;
-  // padding: 0 135px;
+  padding: 0 135px;
 }
 
 .container {
@@ -131,6 +131,7 @@
 
         .img {
           text-align: center;
+          height: 198px;
         }
 
         .main {
