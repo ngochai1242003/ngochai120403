@@ -1,0 +1,239 @@
+* {
+    padding: 0;
+    margin: 0;
+    /* box-sizing: border-box; */
+}
+
+.top__header {
+    margin-top: 26px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header__menu {}
+
+.style_a {
+    color: #000000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07px;
+    text-decoration: none;
+    padding-right: 40px;
+}
+
+.login__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #000000 100%);
+    margin-left: 12px;
+    width: 84px;
+    height: 42px;
+    flex-shrink: 0;
+}
+
+.img_login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login__header>a {
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.07px;
+    text-decoration: none;
+    padding: 13px 15px 12px 16px;
+    white-space: nowrap;
+}
+
+.hungry {}
+
+.container {}
+
+.a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hungry__left {}
+
+.header__title-1 {
+    color: #FF4415;
+    font-family: Seaweed Script;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    /* 113.636% */
+}
+
+.header__content-1 {
+    color: #101010;
+    font-family: Inter;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 72px;
+    /* 116.129% */
+}
+
+.card_content {
+    width: 452px;
+    color: #646464;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+    letter-spacing: -0.18px;
+}
+
+.search {
+    border-radius: 15px 0px 0px 15px;
+    background: #FFF;
+    width: 306px;
+    height: 62px;
+    display: flex;
+}
+
+.main__search {
+    color: #B1B1B1;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 15px;
+    /* 100% */
+    letter-spacing: 0.075px;
+    padding: 24px 91px 23px 16px;
+
+}
+
+.button__discover {
+    border-radius: 0 16px 16px 0;
+    width: 80px;
+    background: linear-gradient(92deg, #3FDA7D 48.17%, #00BE4C 100%);
+    box-shadow: 0px 10px 20px -10px rgba(234, 234, 234, 0.40);
+}
+
+.button__discover>a {
+    text-decoration: none;
+}
+
+.sign-in {}
+
+.img_shipper {}
+
+
+/* .menu {
+    padding-top: 64px;
+}
+
+.menu__items {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.crd {
+    border-radius: 24px;
+    border: 1.2px solid #EFEFEF;
+    background: #FFF;
+    width: 368px;
+    height: 410px;
+    flex-shrink: 0;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.card_img {
+    text-align: center;
+}
+
+.card__main {
+    padding-left: 28px;
+}
+
+.star__icon {
+    width: 102px;
+    height: 22px;
+    margin-top: 12px;
+}
+
+.card_title {
+    color: #181818;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-top: 10px;
+}
+
+.card_content {
+    color: #787878;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: -0.16px;
+    line-height: 162.5%;
+    width: 287px;
+}
+
+.card_buttom {
+    padding-left: 28px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttom__price {
+    color: #787878;
+    font-family: Inter, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttom__health-share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

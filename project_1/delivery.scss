@@ -1,0 +1,226 @@
+@mixin container {
+  max-width: 1440px;
+  margin: auto;
+  // padding: 0 135px;
+}
+
+.container {
+  @include container;
+
+  &__title {
+    font-family: Seaweed Script, cursive;
+    color: #ff4415;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+  }
+
+  &__content {
+    color: #101010;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Inter, sans-serif;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 119.321%;
+    width: 590px;
+    margin: 0 auto;
+  }
+
+  &__heading {
+    width: 452px;
+    color: #646464;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 175% */
+    letter-spacing: -0.16px;
+    margin: auto;
+    margin-top: 18px;
+  }
+
+  &__card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    .card {
+      margin: 70px 0;
+      background: #fff;
+      box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1);
+      height: 464px;
+
+      &__title {
+        color: #1b1b1b;
+        font-family: Inter;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 22px; /* 78.571% */
+        margin-left: 30px;
+        margin-top: 32px;
+      }
+
+      &__heading {
+        width: 270px;
+        color: #939393;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px; /* 162.5% */
+        letter-spacing: -0.08px;
+        margin-left: 30px;
+        margin-top: 14px;
+      }
+
+      &__btn{
+        width: 171px;
+        height: 62px;
+        border-radius: 14px 16px 16px 16px;
+        background: linear-gradient(102deg, #46c266 41.25%, #2fb652 98.64%);
+        box-shadow: 0px 10px 20px -10px rgba(59, 189, 93, 0.16);
+        margin-left: 30px;
+        margin-top: 24px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .btn {
+          &__a {
+            color: #fff;
+            font-family: Inter;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            text-decoration: none;
+          }
+  
+          &__img {
+            margin-top: 16px;
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+    }
+  }
+  .menu {
+    padding-top: 64px;
+
+    &__items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      .crd {
+        border-radius: 24px;
+        border: 1.2px solid #efefef;
+        background: #fff;
+        width: calc((100% / 3) - 22px);
+        min-width: 300px;
+        height: 410px;
+        padding: 20px;
+        margin-bottom: 30px;
+
+        .img {
+          text-align: center;
+        }
+
+        .main {
+          // padding-left: 28px;
+
+          .star__icon {
+            width: 102px;
+            height: 22px;
+            margin-top: 12px;
+          }
+
+          .name__title {
+            color: #181818;
+            font-family: Inter, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 10px;
+          }
+
+          .content {
+            color: #787878;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            margin-top: 10px;
+            letter-spacing: -0.16px;
+            line-height: 162.5%;
+            // width: 287px;
+          }
+        }
+
+        .buttom {
+          // padding-left: 28px;
+          // margin-top: 20px;
+          display: flex;
+          justify-content: space-between;
+
+          &__price {
+            color: #787878;
+            font-family: Inter, sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &__health-share {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+
+  .card__btn-1{
+    width: 171px;
+    height: 62px;
+    border-radius: 14px 16px 16px 16px;
+    background: linear-gradient(102deg, #46c266 41.25%, #2fb652 98.64%);
+    box-shadow: 0px 10px 20px -10px rgba(59, 189, 93, 0.16);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 55px;
+    margin-bottom: 120px;
+
+
+    .btn__a {
+      color: #fff;
+      font-family: Inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-decoration: none;
+    }
+
+    .btn__img {
+      margin-top: 16px;
+      width: 50px;
+      height: 50px;
+    }
+  }
+}
