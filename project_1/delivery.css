@@ -1,7 +1,6 @@
 .container {
   max-width: 1440px;
   margin: auto;
-  padding: 0 135px;
 }
 .container__title {
   font-family: Seaweed Script, cursive;
@@ -21,11 +20,9 @@
   font-style: normal;
   font-weight: 700;
   line-height: 119.321%;
-  width: 590px;
-  margin: 0 auto;
 }
 .container__heading {
-  width: 452px;
+  max-width: 452px;
   color: #646464;
   text-align: center;
   font-family: Inter;
@@ -45,8 +42,11 @@
 .container__card .card {
   margin: 70px 0;
   background: #fff;
-  box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1);
   height: 464px;
+}
+.container__card .card__img {
+  width: 368px;
+  height: 220px;
 }
 .container__card .card__title {
   color: #1b1b1b;
@@ -116,7 +116,7 @@
 }
 .container .menu__items .crd .img {
   text-align: center;
-  height: 198px;
+  max-height: 198px;
 }
 .container .menu__items .crd .main .star__icon {
   width: 102px;
