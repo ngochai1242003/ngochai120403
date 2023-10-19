@@ -1,6 +1,7 @@
 .container {
   max-width: 1440px;
   margin: auto;
+  padding: 0 135px;
 }
 .container__title {
   font-family: Seaweed Script, cursive;
@@ -115,8 +116,9 @@
   margin-bottom: 30px;
 }
 .container .menu__items .crd .img {
-  text-align: center;
-  max-height: 198px;
+  max-width: 190px;
+  max-height: 190px;
+  margin: auto;
 }
 .container .menu__items .crd .main .star__icon {
   width: 102px;
@@ -131,6 +133,9 @@
   font-weight: 600;
   line-height: normal;
   margin-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .container .menu__items .crd .main .content {
   color: #787878;

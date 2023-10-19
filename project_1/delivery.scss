@@ -1,7 +1,7 @@
 @mixin container {
   max-width: 1440px;
   margin: auto;
-  // padding: 0 135px;
+  padding: 0 135px;
 }
 
 .container {
@@ -135,12 +135,16 @@ height: 220px;
         margin-bottom: 30px;
 
         .img {
-          text-align: center;
-          max-height: 198px;
+          max-width: 190px;
+          max-height: 190px;
+          margin: auto;
         }
 
         .main {
           // padding-left: 28px;
+          // text-overflow: ellipsis;
+          // white-space: nowrap;
+          // overflow: hidden;
 
           .star__icon {
             width: 102px;
@@ -156,6 +160,10 @@ height: 220px;
             font-weight: 600;
             line-height: normal;
             margin-top: 10px;
+            // max-width: 207px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
           }
 
           .content {
