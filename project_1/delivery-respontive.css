@@ -1,4 +1,164 @@
-@media only screen and (max-width: 899px){
+/*---------------------- food need me ----------------------*/
+
+/* Mixin */
+
+@mixin media-sm-down{
+    @media only screen and (max-width: 576px) {
+        @content
+    }
+}
+
+@mixin media-sm-up{
+    @media only screen and (min-width: 576px) {
+        @content
+    }
+}
+
+@mixin media-md-up{
+    @media only screen and (min-width: 768px) {
+        @content
+    }
+}
+
+@mixin media-lg-up{
+    @media only screen and (min-width: 992px) {
+        @content
+    }
+}
+
+@mixin media-xl-up{
+    @media only screen and (min-width: 1200px) {
+        @content
+    }
+}
+
+@mixin media-xxl-up{
+    @media only screen and (min-width: 1440px) {
+        @content
+    }
+}
+
+/* include */
+
+@include media-sm-down {
+    .container {
+      max-width: 100%;
+    }
+
+    .card{
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+    }
+}
+
+@include media-sm-up {
+    .container {
+      max-width: 540px;
+    }
+
+    .card{
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+    }
+}
+
+@include media-md-up {
+    .container {
+      max-width: 720px;
+    }
+
+    :root{
+        --number: 2;
+    }
+}
+
+@include media-lg-up {
+    .container {
+      max-width: 960px;
+    }
+}
+
+@include media-xl-up {
+    .container {
+      max-width: 1140px;
+    }
+
+    :root{
+        --number: 3;
+    }
+}
+
+@include media-xxl-up {
+    .container {
+      max-width: 1320px;
+    }
+
+    :root{
+        --number: 4;
+    }
+}
+
+/* -------- */
+/* @media (max-width: 576px) {
+     .container{
+        max-width: 100%;
+     }
+}
+
+@media (min-width: 576px) {
+    .container{
+        max-width: 540px;
+     }
+
+     :root{
+        --number: 2;
+     }
+
+     .card{
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+     }
+}
+
+@media (min-width: 768px) {
+    .container{
+        max-width: 720px;
+     }
+
+     :root{
+        --number: 2;
+     }
+
+     .card{
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+     }
+}
+
+@media (min-width: 992px) {
+    .container{
+        max-width: 960px;
+     }
+}
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1140px;
+     }
+}
+
+@media (min-width: 1440px) {
+    .container{
+        max-width: 1320px;
+     }
+
+     :root{
+        --number: 4;
+     }
+
+    .card{
+        width: calc((100% - (var(--gap) * (var(--number) - 1))) / var(--number));
+     }
+} */
+
+/*--------------- Wait a minute for delicious -------------*/
+/* @media only screen and (max-width: 899px){
     .container{
         display: flex;
         flex-direction: column;
@@ -38,7 +198,7 @@
     .container__heading{
         font-size: 12px;
     }
-}
+} */
 
 /* Table: width >= 740px and width < 1024px */
 /* @media only screen and (max-width: 46.25em) and (max-width: 63.9375){

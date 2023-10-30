@@ -1,8 +1,97 @@
-@mixin container {
-  max-width: 1440px;
-  margin: auto;
-  padding: 0 135px;
+html{
+  font-family: Inter;
 }
+ 
+@mixin container {
+max-width: 1440px;
+margin: auto;
+// padding: 0 135px;
+}
+
+.container{
+  @include container;
+  .topbar{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    .food-near-me{
+      
+      .title{
+        color: #101010;
+        font-size: 34px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 40px; /* 117.647% */
+        letter-spacing: -0.34px;
+        display: inline;
+      }
+
+      .img__fire{
+
+      }
+
+    }
+  }
+
+  .card--all{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    gap: var(--gap);
+
+      .card{
+        border-radius: 24px;
+        background: #F6F6F6;
+        position: relative;
+        min-width: 270px;
+        height: 130px;
+        margin-top: 84px;
+
+        &--img{
+          width: 120px;
+          height: 120px;
+          position: absolute;
+          bottom: 32px;
+          right: 26px;
+        }
+
+        &--content{
+          padding: 20px 30px 0 30px;
+
+          h3{
+            color: #171717;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px; /* 100% */
+            letter-spacing: -0.24px;
+          }
+
+          .heading{
+            color: #969696;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 25px; /* 138.889% */
+            margin-top: 16px;
+          }
+
+          .price{
+            color: #FF4415;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 25px;
+          }
+        }
+      }
+    }
+  }
+
+
+
 
 .container {
   @include container;
@@ -21,7 +110,6 @@
     color: #101010;
     text-align: center;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-family: Inter, sans-serif;
     font-size: 52px;
     font-style: normal;
     font-weight: 700;
@@ -47,17 +135,31 @@
   &__card {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    gap: 32px;
 
-    .card {
+    .cd{
       margin: 70px 0;
       background: #fff;
-      // box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1);
-      height: 464px;
+      width: calc(33.3333333333% - 22px);
+      // box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1) ;
+      // width: calc((100% / 3) - 22px);
+      min-width: 200px;
+
+      .cd_1{
+        height: 250px;
+        width: 100%;
+      }
 
       &__img{
-        width: 368px;
-height: 220px;
+        width: 100%;
+        height: 250px;
+        margin: auto; 
+      }
+
+      .cd_content{
+        padding: 32px 30px 38px 30px;
+        background: #FFF;
+        box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.08);
       }
 
       &__title {
@@ -67,8 +169,6 @@ height: 220px;
         font-style: normal;
         font-weight: 700;
         line-height: 22px; /* 78.571% */
-        margin-left: 30px;
-        margin-top: 32px;
       }
 
       &__heading {
@@ -80,7 +180,6 @@ height: 220px;
         font-weight: 400;
         line-height: 26px; /* 162.5% */
         letter-spacing: -0.08px;
-        margin-left: 30px;
         margin-top: 14px;
       }
 
@@ -90,7 +189,6 @@ height: 220px;
         border-radius: 14px 16px 16px 16px;
         background: linear-gradient(102deg, #46c266 41.25%, #2fb652 98.64%);
         box-shadow: 0px 10px 20px -10px rgba(59, 189, 93, 0.16);
-        margin-left: 30px;
         margin-top: 24px;
         display: flex;
         justify-content: space-around;
@@ -122,7 +220,7 @@ height: 220px;
     &__items {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-around;
+      gap: 30px;
 
       .crd {
         border-radius: 24px;
@@ -132,12 +230,14 @@ height: 220px;
         min-width: 300px;
         height: 410px;
         padding: 20px;
-        margin-bottom: 30px;
 
         .img {
-          max-width: 190px;
-          max-height: 190px;
+          width: 190px;
+          height: 190px;
           margin: auto;
+          display: flex;
+          justify-content: center;
+          // max-height: 51.7%;
         }
 
         .main {
