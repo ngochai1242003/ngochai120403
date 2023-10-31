@@ -6,6 +6,67 @@ html {
   max-width: 1440px;
   margin: auto;
 }
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .header-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .header-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+}
+.container .header-menu .style_a {
+  color: #000000;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.07px;
+  text-decoration: none;
+}
+.container .header-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #000000 100%);
+  width: 84px;
+  height: 42px;
+}
+.container .header-login a {
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.07px;
+  text-decoration: none;
+  padding: 13px 15px 12px 16px;
+  white-space: nowrap;
+}
+.container .header-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
 .container .topbar {
   display: flex;
   justify-content: space-between;
@@ -108,26 +169,19 @@ html {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  margin: 70px 0;
 }
 .container__card .cd {
-  margin: 70px 0;
   background: #fff;
-  width: calc(33.3333333333% - 22px);
+  width: calc(33.3333333333% - 21.9px);
+  box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1);
   min-width: 200px;
-}
-.container__card .cd .cd_1 {
-  height: 250px;
-  width: 100%;
 }
 .container__card .cd__img {
   width: 100%;
-  height: 250px;
-  margin: auto;
 }
 .container__card .cd .cd_content {
   padding: 32px 30px 38px 30px;
-  background: #FFF;
-  box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.08);
 }
 .container__card .cd__title {
   color: #1b1b1b;
@@ -138,7 +192,6 @@ html {
   line-height: 22px; /* 78.571% */
 }
 .container__card .cd__heading {
-  width: 270px;
   color: #939393;
   font-family: Inter;
   font-size: 16px;

@@ -10,6 +10,75 @@ margin: auto;
 
 .container{
   @include container;
+
+  .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-menu{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 40px;
+
+      .style_a{
+        color: #000000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.07px;
+        text-decoration: none;
+      }
+
+    }
+
+    &-login{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #272727 0%, #171717 46.01%, #000000 100%);
+      width: 84px;
+      height: 42px;
+
+      a{
+        color: #FFF;
+        text-align: center;
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 0.07px;
+        text-decoration: none;
+        padding: 13px 15px 12px 16px;
+        white-space: nowrap;
+      }
+    }
+
+    &-img{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+  }
+}
+
+.container{
+  @include container;
   .topbar{
     display: flex;
     justify-content: space-between;
@@ -136,30 +205,26 @@ margin: auto;
     display: flex;
     flex-wrap: wrap;
     gap: 32px;
+    margin: 70px 0;
 
     .cd{
-      margin: 70px 0;
       background: #fff;
-      width: calc(33.3333333333% - 22px);
-      // box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1) ;
+      width: calc(33.3333333333% - 21.9px);
+      box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.1) ;
       // width: calc((100% / 3) - 22px);
       min-width: 200px;
 
       .cd_1{
-        height: 250px;
-        width: 100%;
+        
       }
 
       &__img{
         width: 100%;
-        height: 250px;
-        margin: auto; 
       }
 
       .cd_content{
         padding: 32px 30px 38px 30px;
-        background: #FFF;
-        box-shadow: 0px 25px 120px -30px rgba(0, 0, 0, 0.08);
+        
       }
 
       &__title {
@@ -172,7 +237,6 @@ margin: auto;
       }
 
       &__heading {
-        width: 270px;
         color: #939393;
         font-family: Inter;
         font-size: 16px;
