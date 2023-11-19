@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Kanit', sans-serif;
+}
+
+@mixin container {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.container{
+    @include container;
+
+    .header-CV{
+        background-color: rgb(99, 104, 208);
+        width: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin: 10px 0;
+        border-radius: 32px;
+        border: 3px solid black;
+
+        &_title{
+            h4{
+                font-family: 'Kanit', sans-serif;
+                color: white ;
+                -webkit-text-stroke: 2px black;
+                font-size: 1.8rem;
+                letter-spacing: 2px;
+                text-transform: uppercase;  
+            }
+        }
+
+        &_line{
+            width: 50%;
+            height: 10px;
+            background-color: white;
+            border: 3px solid black;
+        }
+
+        &_icon{
+            display: flex;
+            gap: 14px;
+            .fa-square-full{
+                width: 20px;
+                height: 20px;
+                border: 3px solid black;
+            }
+        }
+    }
+
+    .profile{
+        &-frame{
+           img{
+                width: 200px;
+                height:200px;
+                object-fit: cover;
+            }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+@media (max-width: 1300px) {
+  .body .container {
+    margin: auto 20px;
+  }
+  .body .container .resume {
+    margin: 100px 0;
+  }
+  .body .container .resume .sidebar {
+    width: 100%;
+    position: unset;
+    display: flex;
+    flex-direction: row;
+    padding: 60px;
+    height: 680px;
+  }
+  .body .container .resume .sidebar-img {
+    position: unset;
+  }
+  .body .container .resume .sidebar-all {
+    width: 77%;
+    flex: 1;
+    margin-left: 30px;
+    text-align: left;
+  }
+  .body .container .resume .sidebar-all .sidebar-introduce {
+    margin-top: 0;
+  }
+  .body .container .resume .sidebar-all .sidebar-social {
+    justify-content: left;
+  }
+  .body .container .resume .sidebar-all .sidebar-info {
+    margin: 0;
+    background-color: white;
+    padding: 0;
+    width: 100%;
+  }
+  .body .container .resume .profile {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .body .container .resume .navbar {
+    left: -114px;
+    flex-direction: column;
+    width: 144px;
+    height: 560px;
+    position: fixed;
+    transform: scale(0.75);
+    margin-top: 30px;
+  }
+  .body .container .resume .navbar:hover {
+    left: -10px;
+  }
+  .body .container .resume .navbar::before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: "";
+    background: rgb(243, 1, 1);
+    opacity: 0;
+    transform: translateX(calc(-100% + 20px));
+  }
+}
+@media (max-width: 750px) {
+  .body .container {
+    margin: auto 20px;
+  }
+  .body .container .resume .sidebar {
+    flex-direction: column;
+    align-items: center;
+    height: 1034px;
+  }
+  .body .container .resume .sidebar-all {
+    margin: 0;
+    margin-top: 30px;
+    text-align: center;
+  }
+  .body .container .resume .sidebar-all .sidebar-social {
+    justify-content: center;
+  }
+  .body .container .resume .sidebar-all .sidebar-info {
+    text-align: center;
+  }
+  .body .container .resume .sidebar-all .sidebar-info .contact-info .info-content {
+    text-align: left;
+  }
+  .body .container .resume .profile-grid .self {
+    display: inline;
+  }
+}/*# sourceMappingURL=respontive.css.map */
