@@ -87,6 +87,9 @@ html {
   border-radius: 8px;
   background-color: var(--background-color-grey);
 }
+.body .container .resume .sidebar-all .sidebar-social .social-network:hover {
+  background: #E3E3E3;
+}
 .body .container .resume .sidebar-all .sidebar-info {
   width: 340px;
   height: 296px;
@@ -143,6 +146,9 @@ html {
   gap: 10px;
   border-radius: 10px;
   background: linear-gradient(94deg, #FA5252 0%, #DD2476 100%);
+}
+.body .container .resume .sidebar-all .sidebar-download .btn-download:hover {
+  opacity: 0.7;
 }
 .body .container .resume .profile {
   max-width: 850px;

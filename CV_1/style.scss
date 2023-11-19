@@ -107,7 +107,10 @@ html{
                             height: 40px;
                             border-radius: 8px;
                             background-color:var(--background-color-grey);
-    
+                        }
+
+                        .social-network:hover{
+                            background: #E3E3E3;
                         }
                     }
     
@@ -173,6 +176,10 @@ html{
                             gap: 10px;
                             border-radius: 10px;
                             background: linear-gradient(94deg, #FA5252 0%, #DD2476 100%);
+                        }
+
+                        .btn-download:hover{
+                            opacity: .7;
                         }
                     }  
                 }
