@@ -11,6 +11,9 @@ html {
   justify-content: space-between;
   align-items: center;
 }
+.container .header-a {
+  background-color: #2fb652;
+}
 .container .header-logo {
   display: flex;
   justify-content: center;

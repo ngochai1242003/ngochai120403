@@ -4,18 +4,24 @@
 
 //--------------------------------------------------------------------------------
 
-// var firstName;
-// var middleName;
-// var lastName;
+var firstName;
+var middleName;
+var lastName;
 
 
-// firstName= 'Dang'
-// middleName= 'Ngoc'
-// lastName= 'Hai'
+firstName= 'Dang'
+middleName= 'Ngoc'
+lastName= 'Hai'
 
-// var fullname = firstName + ' ' + middleName + ' ' + lastName;
+var fullname = firstName + ' ' + middleName + ' ' + lastName;
 
-// console.log(fullname);
+console.log(fullname);
+
+// var a =1;
+// var b=2;
+// var c= a+b;
+// console.log('««««« c »»»»»', c);
+
 
 
 // var age;
@@ -25,16 +31,16 @@
 
 //--------------------------------------------------------------------------------
 
-var a=5;
-var b='5';
+// var a=5;
+// var b='5';
 // == => GIá trị bằng nhau thì => true (không quan tâm kiểu dữ liệu)
-console.log("a == b", a==b);
+// console.log("a == b", a==b);
 
-console.log("a === b",a===b);
-// != => GIá trị bằng nhau thì => false (không quan tâm kiểu dữ liệu)
-console.log("a != b", a!=b);
-console.log('a !== b',a!==b);
-console.log('a && b',a && b);
+// console.log("a === b",a===b);
+// != => GIá trị bằng nhau thì => false ( quan tâm kiểu dữ liệu)
+// console.log("a != b", a!=b);
+// console.log('a !== b',a!==b);
+// console.log('a && b',a && b);
 
 
 

@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header_navbar_all{
+    background-color: black;
+}
+.header_topbar{
+    display: flex;
+    justify-content: center;
+    background-color: #525252;
+    background-color: #525252;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px;
+    letter-spacing: 2px;
+}
+
+.fa-truck{
+    margin-top: 12px;
+    margin-left: 5px;
+}
+
+.header_navbar{
+    /* background-color: black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.logo_shop{
+    height: 50px; 
+}
+
+.logo{
+    width: 50px;
+    height: 50px;
+
+}
+
+.menu_items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.list_items{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.list_items:hover{
+    background-color: #3c3c3c;
+}
+
+.items{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+
+.icon_header{
+    display: flex;
+    gap: 30px;
+}
+
+.container{
+    max-width: 1320px;
+    margin: auto;
+
+}

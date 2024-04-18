@@ -34,7 +34,7 @@ html {
 }
 .body .container .resume .sidebar {
   width: 400px;
-  height: 740px;
+  height: 770px;
   border-radius: 20px;
   background: #FFF;
   position: relative;
@@ -92,7 +92,6 @@ html {
 }
 .body .container .resume .sidebar-all .sidebar-info {
   width: 340px;
-  height: 296px;
   padding: 30px;
   margin-top: 30px;
   margin: auto;
@@ -129,6 +128,7 @@ html {
   color: #000;
   text-overflow: ellipsis;
   overflow: hidden;
+  word-wrap: break-word;
 }
 .body .container .resume .sidebar-all .sidebar-info .contact-info:last-child {
   border-bottom: none;

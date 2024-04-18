@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+h1{
+    text-transform: uppercase;
+    color: #8a2424;
+}
+h4{
+    text-transform: uppercase;
+    border: 1px solid #8a2424;
+    background-color: #8a2424;
+    color: #ffffff;
+    padding-left: 10px;
+}
+.table{
+    /* width: 100%; */
+}
+
+.table_info{
+    display: flex;
+}
+.chu{
+    
+}
+.tb{
+    text-decoration: underline;
+}
+.tr{
+    text-align: center;
+    width: 100%;
+}
+
+.a{
+    text-align: center;
+}
+.submit{
+    border: 1px solid #8a2424;
+    color: #ffffff;
+    background-color: #8a2424;
+    text-transform: uppercase;
+    display: inline-flex;
+    justify-content: center;
+
+}
